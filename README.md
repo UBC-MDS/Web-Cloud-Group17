@@ -1,6 +1,6 @@
 # Web-Cloud-Group17
 
-Group Project for Group 17 of DSCI 525 Web and Cloud Computing, Master of Data Science 2021-2022, University of Bristish Columbia
+Group Project for Group 17 of DSCI 525 Web and Cloud Computing, Master of Data Science 2021-2022, University of Bristish Columbia  
 Members: James Kim, Kyle Ahn, Linh Giang Nguyen, Philson Chan
 
 ## Description
