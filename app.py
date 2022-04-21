@@ -7,6 +7,12 @@ app = Flask(__name__)
 app.debug = True
 
 # 1. Load your model here
+aws_credentials = {
+    "key": "ASIAQ3IZ36HL2AQ7SFA6",
+    "secret": "MZ77hywv4TmfhoII77S4qhQat6J2f42b54Hi/yQD",
+    "token": "FwoGZXIvYXdzEJD//////////wEaDOeJdSgwFso86voVziLCAbavNQ40YxRN3VLRxB2i6EeGPaScy1IyvRmdz7JP02y1a2sj3AFdG7seDx2vJ6J/j4wdRpkttiaMQZY21GrcHrpIaVgO5RUeeoXTjYPAV2KZAuZANPMJJ4r+nUzTsDWZj9u0hADoo0t5DYmsCfPfyUIN3jiGLGdKWVk7C2/mWXvBOBPLceSvJhdQW1fiZkfMPSmhwGuYl6Ju3NOAKW8FV4R1m7G2vD05y0dapjysMpQJsEVDeQKB66QRvOZ7kWxHX4U3KPOvh5MGMi2vMGNJgvn4bC41BAxmKQwXUROvnGngwjiAXF4KCLA2wEWuDiqX+MIEZz+6Ujg="
+} 
+df = pd.read_csv("s3://mds-s3-17/output/model.joblib", storage_options=aws_credentials, parse_dates=True)
 model = joblib.load("./data/model.joblib")
 
 # 2. Define a prediction function
